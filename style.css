@@ -1,0 +1,761 @@
+/*-- Inizio Stile Sfondo in Hover Transition --*/
+        
+        
+html {
+            
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background: url("Resources/Risorsa 3.png"), #2c2c2c;
+    -webkit-font-smoothing: antialiased;
+    animation: color-change 8s linear infinite alternate;
+}  
+
+
+@keyframes color-change {
+  0% {
+    background-color: #2c2c2c;
+  }
+  100% {
+    background-color: #0f6772;
+  }
+}
+
+.headermobile {
+    
+    display: none;
+    
+}
+        
+/*-- Fine Stile Sfondo in Hover Transition --*/
+        
+/*-- Inizio Stile Body --*/
+
+ * {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+}
+
+.left {                    
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    overflow: visible;
+    top: 0;
+    display: inline-block;
+    background: #ffffff;
+    background-size: auto;
+    height: 100vh;
+    max-height: 100%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em 0 1em;
+    box-shadow: 0.2em 0 2em #2c2c2c;
+    vertical-align: baseline;
+}
+
+.right {
+    width: 70%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background: #ffffff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: auto;
+    width: 80%;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+}
+        
+/*-- Fine Stile Body --*/
+        
+/*-- Inizio Stile Testo --*/
+        
+
+h1, h2, h3, h4, h5, h6 {
+    color: #212121;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: 'Playfair Display', serif;
+}
+
+h2, h3, h5, h6 {
+    text-align: left;
+}
+        
+h1 {
+    text-align: center !important;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+h4 {
+    margin-top: -1.3em;
+    padding-bottom: 0.3em;
+    text-align: right;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+        
+/*-- Fine Stile Testo --*/
+        
+/*-- Inizio Stile per Floating Left --*/
+
+.imgintroduction {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    height: auto;
+    
+    
+}
+        
+
+.img-profile {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 3.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: inherit;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
+    height: 13em;
+}
+
+@keyframes colorize {
+    0% {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    }
+    100% {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    }
+}
+        
+.hr-sticky {
+            
+    width: 90%;
+    background-color: #2c2c2c;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+            
+        }
+
+.ul-flex {
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    
+}
+
+.ul-flex >div {
+    
+    float: right;
+    display: block;
+    
+}
+        
+.li-skills {
+            
+    list-style-type: none;
+    font-weight: bold;
+                        
+        }
+        
+.li-skills::before {
+            
+    content: "\2022";
+    color: #0f6772;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block; 
+    width: 1em;
+    margin-top: -1em;
+    margin-bottom: -1em;
+    margin-left: -1.5em;
+                            
+        }
+
+.vl {
+    border-left: 0.1em solid #2c2c2c;
+    height: inherit;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    top: 0;
+    
+}
+        
+a {
+    color: #2c2c2c;
+    transition-duration: 0.5s;
+}
+        
+a:hover {
+    color: #179cac;
+    cursor: pointer;
+} 
+        
+.href-floating {
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+        
+.href-floating:hover {
+    color: #2c2c2c;
+    cursor: pointer;
+}
+        
+#div-flexbox-floating-color {
+            
+    background-image: radial-gradient(#2c2c2c 0%, #000000 100%);
+    opacity: 25%;
+    box-shadow: 0 0 5px 0 rgba(44, 44, 44, 1);
+    transform: rotatey(180deg);
+    transform: scale(80%);
+    transition: opacity, transform 1s;
+            
+        }
+        
+#div-flexbox-floating-color:hover {
+            
+    background-image: radial-gradient(#179cac 0%, #0f6772 100%);
+    opacity: 100%;
+    box-shadow: 0 0 5px 0 rgba(23, 156, 172, 1);
+    transform: scale(80%);
+    transform: rotatey(0deg);
+            
+        }
+        
+#div-flexbox-floating-color-bigscreen {
+            
+    background-image: radial-gradient(#2c2c2c 0%, #000000 100%);
+    opacity: 25%;
+    box-shadow: 0 0 5px 0 rgba(44, 44, 44, 1);
+    transform: rotatey(180deg);
+    transform: scale(80%);
+    transition: opacity, transform 1s;
+            
+        }
+        
+#div-flexbox-floating-color-bigscreen:hover {
+            
+    background-image: radial-gradient(#179cac 0%, #0f6772 100%);
+    opacity: 100%;
+    box-shadow: 0 0 5px 0 rgba(23, 156, 172, 1);
+    transform: scale(80%);
+    transform: rotatey(0deg);
+            
+        }
+        
+.borders-block-floating {
+            
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+                
+        }
+        
+.borders-block-floating:hover {
+            
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+            
+        }
+        
+.borders-block-floating-bigscreen {
+            
+    border-radius: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1em;
+                
+        }
+        
+.borders-block-floating-bigscreen:hover {
+            
+    border-radius: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1em;
+            
+        }
+        
+/*-- Fine Stile per Floating Left --*/
+        
+/*-- Inizio Stile per Flexbox "Vuoi sapere qualcosa in più di me?" --*/
+        
+        
+.flex-container {
+            
+    display: flex;
+            
+        }
+        
+.flex-container > div {
+            
+    float: right;
+    padding: 1em;
+            
+        }
+        
+.borders-block-left {
+            
+    border: 2px solid #179cac;
+    border-radius: 15px;
+    text-align: left;
+    margin-right: 0.5em;
+            
+        }
+        
+.borders-block-left:hover {
+            
+    border: 2px solid #2c2c2c;
+    border-radius: 15px;
+    text-align: left;
+            
+        }
+        
+.borders-block-center {
+            
+    border: 2px dashed #179cac;
+    border-radius: 15px;
+    text-align: center;
+                
+        }
+        
+.borders-block-center:hover {
+            
+    border: 2px dashed #2c2c2c;
+    border-radius: 15px;
+    text-align: center;
+            
+        }
+        
+.borders-block-right {
+            
+    border: 2px dotted #179cac;
+    border-radius: 15px;
+    text-align: right;
+    margin-left: 0.5em;
+            
+        }
+        
+.borders-block-right:hover {
+            
+    border: 2px dotted #2c2c2c;
+    border-radius: 15px;
+    text-align: right;
+            
+        }
+        
+#div-flexbox-color {
+            
+    background-image: radial-gradient(#2c2c2c 0%, #000000 100%);
+    opacity: 25%;
+    box-shadow: 0 0 5px 0 rgba(44, 44, 44, 1);
+    transform: rotatex(180deg);
+    transition: opacity, transform 1s;
+            
+        }
+        
+#div-flexbox-color:hover {
+            
+    background-image: radial-gradient(#179cac 0%, #0f6772 100%);
+    opacity: 100%;
+    box-shadow: 0 0 5px 0 rgba(23, 156, 172, 1);
+    transform: rotatex(0deg);
+            
+        }
+        
+#gradient-font-color {
+            
+    color: #ffffff;
+            
+        }
+        
+.fa-book {
+            
+    display: block;
+    font-size: 50px;
+    color: lightblue;
+    text-align: center;
+            
+        }   
+        
+.fa-book-open {
+            
+    display: block;
+    font-size: 50px;
+    color: lightblue;
+    text-align: center;
+            
+        }
+        
+.fa-book-reader {
+            
+    display: block;
+    font-size: 50px;
+    color: lightblue;
+    text-align: center;
+            
+        }   
+        
+.fa-info-circle {
+            
+    display: block;
+    font-size: 50px;
+    color: lightblue;
+    text-align: center;
+    padding-top: 0.2em;
+            
+        }             
+                
+/*-- Fine stile per Flexbox "Vuoi sapere qualcosa in più di me?" --*/
+        
+/*-- Inizio stile per bottone "behanciami mucho" --*/
+        
+        
+.button-behance {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    padding: 0.7em;
+    margin: auto;
+    border-radius: 1em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-behance1 {
+    text-decoration: none;
+    background-color: white; 
+    color: #179cac; 
+    border: 2px solid #179cac;
+    margin-bottom: 0.5em;
+}
+
+.button-behance1:hover {
+    text-decoration: none;
+    background-color: #179cac;
+    color: #ffffff;
+    border-radius: 2em;
+    box-shadow: 0px 0px 25px rgba(23, 156, 172, 0.8);
+}  
+        
+.fa-dungeon {
+            
+    display: block;
+    font-size: 30px;
+    color: lightblue;
+    text-align: center;
+    padding-top: -0.5em;
+    padding-bottom: 0.5em;
+            
+        }
+        
+.abutton {
+    text-decoration: none !important;
+    color: #179cac !important;
+    transition-duration: 0.5s;
+    margin: auto;
+}
+        
+.abutton:hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    cursor: pointer;
+    margin: auto;
+} 
+        
+/*-- Fine stile per bottone "behanciami mucho" --*/
+
+
+/*-- Inizio stile per Contact Form --*/
+
+.imgform {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    padding-bottom: 2em;
+    
+}
+
+input[type=text], select, textarea {
+    
+    width: 100%;
+    max-width: 100%;
+    padding: 1em;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    resize: vertical;
+    
+}
+
+input[type=submit] {
+    
+    display: block;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 1em 5em 1em 5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #179cac;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+input[type=submit]:hover {
+    
+    color: #2c2c2c;
+    background-color: #179cac;
+    box-shadow: 0.1em 0 1em #179cac;
+    
+}
+
+.container {
+    
+    max-width: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background: #2c2c2c;
+    -webkit-font-smoothing: antialiased;
+    animation: color-change 8s linear infinite alternate;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0 auto 3em auto; 
+}
+
+
+/*-- Fine stile per Contact Form --*/
+                
+
+/*-- Inizio stile per scrollbar --*/
+        
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #179cac; 
+    border: 1px dashed rgba(44, 44, 44, 0.6);
+    height: 100px;
+    border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    border: 1px dotted rgba(0, 0, 0, 0.6);
+    background: #0f6772; 
+}
+                
+/*-- Fine stile per scrollbar --*/
+        
+
+/* Inizio Responsive Mobile @media 1536px */
+
+
+@media screen and (max-width: 1280px) {
+    
+header {
+        
+    visibility: hidden !important;
+}
+
+.headermobile {
+    
+    display: block !important;
+    
+}
+
+ * {
+    box-sizing: content-box !important;
+}
+    
+    
+/*-- Inizio Stile Body Mobile --*/
+    
+
+.column {
+    float: none !important;
+}
+
+.left {    
+    position: relative !important;
+    background-size: auto !important;
+    height: auto !important;
+    width: auto !important;
+    padding: 0 0 0 0 !important;
+    margin: 0 1em 0 1em !important;
+    box-shadow: 0 0 0 0 #2c2c2c !important;
+}
+
+.right {
+    width: auto !important;
+    padding: 0 0 0 0 !important;
+    margin: -7em 1em 0 1em !important;
+}
+    
+body {
+    width: 100% !important;
+    padding-right: auto !important;
+}
+
+h4 {
+    margin-top: -0.5em !important;
+}
+    
+    
+/*-- Fine Stile Body Mobile --*/
+    
+        
+/*-- Inizio Stile per Floating Left Mobile --*/
+        
+hr {
+            
+    width: 100% !important;
+            
+    }
+    
+.borders-block-floating-bigscreen {
+        
+        display: none;
+        
+    }
+    
+    
+/*-- Fine Stile per Floating Left Mobile --*/
+    
+    
+/*-- Inizio Stile per Flexbox Mobile --*/
+    
+     
+.flex-container {
+    flex-direction: column !important;
+            
+        }
+        
+.borders-block-left {
+    height: 12em !important;
+    text-align: center !important;
+    margin-right: 0 !important;
+            
+        }
+        
+.borders-block-center {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    height: 12em !important;
+                
+        }
+        
+.borders-block-right {
+    height: 12em !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+            
+        }
+    
+    
+/*-- Inizio Stile per gli elementi della colonna di destra --*/
+
+
+.imgintroduction {
+    
+    width: 15em !important;
+    margin-top: -1.5em !important;
+        
+}
+
+h2, h3, h5, h6 {
+    
+    text-align: center !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.8em !important;
+    
+}
+
+/*-- Fine Stile per gli elementi della colonna di destra --*/
+
+    
+/*-- Inizio Stile per Form Contatti --*/
+    
+    input[type=text] {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 90% !important;
+        border: none !important;
+}
+    
+    
+    textarea {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 90% !important;
+        border: none !important;
+}
+    
+    .container {
+        width: auto !improtant;
+    padding: auto !important;
+    margin: 0 auto 3em auto !important;        
+}
+
+    
+/*-- Fine Stile per Form Contatti --*/
+    
+  
+}
+
+
+/* Fine Responsive Mobile @media 1536px */
